@@ -15,7 +15,6 @@ namespace CleanUp_H1
             {
                 Console.WriteLine(drive.ToString());
             }
-
             Console.WriteLine(SystemAnalysis.Instance.GetCPUUsage());
             Console.WriteLine(SystemAnalysis.Instance.GetMemorySize());
             Console.WriteLine(SystemAnalysis.Instance.GetUsersAndOS());
