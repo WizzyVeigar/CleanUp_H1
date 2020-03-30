@@ -40,7 +40,7 @@ namespace CleanUp_H1
 
             foreach (ManagementObject managementObject in SysInformation.Instance.GetDiskMetaData())
             {
-                HardDrive drive = new HardDrive(managementObject["Name"].ToString(), managementObject["FreeSpace"].ToString(), managementObject["Size"].ToString(), GetHardDiskSerialNumber(managementObject["Name"].ToString()));
+                HardDrive drive = new HardDrive(managementObject["Name"].ToString(), long.Parse(managementObject["FreeSpace"].ToString()), long.Parse(managementObject["Size"].ToString()), GetHardDiskSerialNumber(managementObject["Name"].ToString()));
                 drives.Add(drive);
             }
 

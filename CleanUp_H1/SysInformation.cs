@@ -42,9 +42,9 @@ namespace CleanUp_H1
             return searcher.Get();
         }
 
-        public string GetHardDiskSerialNumber(string drive)
+        public string GetHardDiskSerialNumber(string driveLetter)
         {
-            ManagementObject managementObject = new ManagementObject("Win32_LogicalDisk.DeviceID=\"" + drive + "\"");
+            ManagementObject managementObject = new ManagementObject("Win32_LogicalDisk.DeviceID=\"" + driveLetter + "\"");
             managementObject.Get();
             return managementObject["VolumeSerialNumber"].ToString();
         }

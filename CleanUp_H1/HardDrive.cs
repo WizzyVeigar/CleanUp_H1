@@ -17,17 +17,17 @@ namespace CleanUp_H1
             set { name = value; }
         }
 
-        private string freeSpace;
+        private long freeSpace;
 
-        public string FreeSpace
+        public long FreeSpace
         {
             get { return freeSpace; }
             set { freeSpace = value; }
         }
 
-        private string diskSpace;
+        private long diskSpace;
 
-        public string DiskSpace
+        public long DiskSpace
         {
             get { return diskSpace; }
             set { diskSpace = value; }
@@ -42,7 +42,7 @@ namespace CleanUp_H1
             set { serialNumber = value; }
         }
 
-        public HardDrive(string name, string freeSpace, string diskSpace, string serialNumber)
+        public HardDrive(string name, long freeSpace, long diskSpace, string serialNumber)
         {
             Name = name;
             FreeSpace = freeSpace;

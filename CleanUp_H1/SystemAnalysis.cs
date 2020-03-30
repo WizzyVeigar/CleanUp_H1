@@ -9,6 +9,7 @@ namespace CleanUp_H1
 {
     public class SystemAnalysis
     {
+        //Stringbuilder for all string returned to GUI
         StringBuilder builder;
         private SystemAnalysis()
         {
@@ -41,7 +42,10 @@ namespace CleanUp_H1
             }
             return builder.ToString();
         }
-
+        /// <summary>
+        /// Gets how much percentage each process takes from the CPU
+        /// </summary>
+        /// <returns></returns>
         public string GetCPUUsage()
         {
             builder = new StringBuilder();
@@ -71,7 +75,7 @@ namespace CleanUp_H1
 
 
         /// <summary>
-        /// Better name again
+        /// Gets all boot devices
         /// </summary>
         public string GetBootDevices()
         {
